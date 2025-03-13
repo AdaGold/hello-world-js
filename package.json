@@ -1,0 +1,29 @@
+{
+  "name": "hello-world-js",
+  "version": "1.0.0",
+  "description": "Example repo for a Hello World Node.js application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaGold/hello-world-js.git"
+  },
+  "author": "Ada Developers Academy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaGold/hello-world-js/issues"
+  },
+  "homepage": "https://github.com/AdaGold/hello-world-js#readme",
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
+    "globals": "^16.0.0"
+  }
+}
