@@ -1,11 +1,15 @@
 import globals from "globals";
 import js from "@eslint/js";
+import stylistic from "@stylistic/eslint-plugin";
 
 
 export default [
   js.configs.recommended,
   { ignores: ["*.config.*"] },
   {
+    plugins: {
+      '@stylistic': stylistic
+    },
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -20,7 +24,7 @@ export default [
       "no-unused-vars": "warn",
       "no-console": "off",
       "comma-dangle": ["warn", "only-multiline"],
-      "semi": ["warn", "always"],
+      "@stylistic/semi": ["warn", "always"],
       quotes: [2, "single",
         {
           allowTemplateLiterals: true,
